@@ -13,6 +13,8 @@ public class Main {
 		WebDriverManager.chromedriver().setup();
 
 		Driver driver = new Driver();
+		
+		driver.exerciseOne();
 
 	}
 
