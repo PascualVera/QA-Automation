@@ -1,20 +1,19 @@
 package main;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
-
 import driver.Driver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+import java.io.IOException;
+
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		WebDriverManager.chromedriver().setup();
 
 		Driver driver = new Driver();
-		
-		driver.exerciseOne();
+
+		driver.exerciseTwo("file:///C:/Users/Pascual.Vera/Downloads/linksrotos.html");
 
 	}
 
